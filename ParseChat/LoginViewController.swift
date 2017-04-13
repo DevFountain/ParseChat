@@ -24,7 +24,14 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onLogin(_ sender: Any) {
-        
+        PFUser.logInWithUsername(inBackground: userNameTextField.text ?? "", password: passwordTextField.text ?? "") {
+             (user,error) in
+             if user != nil {
+                 NSLog("successful log in")
+             } else {
+                 NSLog("login failed")
+             }
+        }
     }
 
     @IBAction func onSignUp(_ sender: Any) {
