@@ -27,25 +27,27 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: userNameTextField.text ?? "", password: passwordTextField.text ?? "") {
              (user,error) in
              if user != nil {
-                 NSLog("successful log in")
+                NSLog("successful log in")
+                self.performSegue(withIdentifier: "PresentChat", sender: self)
              } else {
-                 NSLog("login failed")
+                NSLog("login failed")
              }
         }
     }
 
     @IBAction func onSignUp(_ sender: Any) {
-        var user = PFUser()
+        let user = PFUser()
         user.username = userNameTextField.text
         user.password = passwordTextField.text
         user.email = userNameTextField.text
        
         user.signUpInBackground { (isSuccess, error) in
             if let error = error {
-               NSLog("error")
+               NSLog(error as! String)
                 // Show the errorString somewhere and let the user try again.
             } else {
                 NSLog("success sign up")
+                self.performSegue(withIdentifier: "PresentChat", sender: self)
                 // Hooray! Let them use the app now.
             }
 
