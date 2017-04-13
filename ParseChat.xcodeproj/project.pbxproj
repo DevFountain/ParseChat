@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		88A3C79A88FA6ABE35EAF5A0 /* Pods_ParseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2860A372254B484005465C6F /* Pods_ParseChat.framework */; };
 		E9B430D01E9F16C6005C6511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B430CF1E9F16C6005C6511 /* AppDelegate.swift */; };
-		E9B430D21E9F16C6005C6511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B430D11E9F16C6005C6511 /* ViewController.swift */; };
+		E9B430D21E9F16C6005C6511 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B430D11E9F16C6005C6511 /* LoginViewController.swift */; };
 		E9B430D51E9F16C6005C6511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B430D31E9F16C6005C6511 /* Main.storyboard */; };
 		E9B430D71E9F16C6005C6511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B430D61E9F16C6005C6511 /* Assets.xcassets */; };
 		E9B430DA1E9F16C6005C6511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B430D81E9F16C6005C6511 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		A25A5BBB55751FBB1F859141 /* Pods-ParseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B430CC1E9F16C6005C6511 /* ParseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B430CF1E9F16C6005C6511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9B430D11E9F16C6005C6511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9B430D11E9F16C6005C6511 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9B430D41E9F16C6005C6511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9B430D61E9F16C6005C6511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B430D91E9F16C6005C6511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B430CF1E9F16C6005C6511 /* AppDelegate.swift */,
-				E9B430D11E9F16C6005C6511 /* ViewController.swift */,
+				E9B430D11E9F16C6005C6511 /* LoginViewController.swift */,
 				E9B430D31E9F16C6005C6511 /* Main.storyboard */,
 				E9B430D61E9F16C6005C6511 /* Assets.xcassets */,
 				E9B430D81E9F16C6005C6511 /* LaunchScreen.storyboard */,
@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					E9B430CB1E9F16C6005C6511 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V4YF8V8WZ6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9B430D21E9F16C6005C6511 /* ViewController.swift in Sources */,
+				E9B430D21E9F16C6005C6511 /* LoginViewController.swift in Sources */,
 				E9B430D01E9F16C6005C6511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -324,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -338,7 +339,7 @@
 			baseConfigurationReference = A25A5BBB55751FBB1F859141 /* Pods-ParseChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V4YF8V8WZ6;
 				INFOPLIST_FILE = ParseChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.ParseChat;
@@ -352,7 +353,7 @@
 			baseConfigurationReference = 25E48732E0E5A4EC08DB9408 /* Pods-ParseChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V4YF8V8WZ6;
 				INFOPLIST_FILE = ParseChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.ParseChat;
@@ -380,6 +381,7 @@
 				E9B430E01E9F16C6005C6511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
