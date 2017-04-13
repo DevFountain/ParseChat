@@ -13,7 +13,6 @@
 		E9B430D51E9F16C6005C6511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B430D31E9F16C6005C6511 /* Main.storyboard */; };
 		E9B430D71E9F16C6005C6511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B430D61E9F16C6005C6511 /* Assets.xcassets */; };
 		E9B430DA1E9F16C6005C6511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B430D81E9F16C6005C6511 /* LaunchScreen.storyboard */; };
-		E9F436171E9F248700DABD64 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F436161E9F248700DABD64 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B430D21E9F16C6005C6511 /* LoginViewController.swift in Sources */,
-				E9F436171E9F248700DABD64 /* ChatViewController.swift in Sources */,
 				E9B430D01E9F16C6005C6511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
